@@ -1,17 +1,27 @@
-# squat_counter
+# Squat Counter
 
-A new Flutter project.
+Aplicativo Flutter (Android) que utiliza o **acelerômetro** do smartphone
+para contar agachamentos, controlar séries e gerar um resumo estatístico
+do treino.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- 📐 Configuração de treino (repetições por série e número de séries)
+- 📈 Detecção automática de agachamentos via acelerômetro (`sensors_plus`)
+- 🔢 Controle de séries com pausa para descanso
+- 📊 Resumo final com gráfico e estatísticas (duração, aderência,
+  tempo médio por rep, etc.)
+- 📚 Histórico persistente de sessões (SQLite)
+- 📳 Feedback tátil a cada repetição
 
-A few resources to get you started if this is your first Flutter project:
+## Como rodar
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Use um **dispositivo Android físico** — emuladores não simulam
+> acelerômetro de forma realista.
+
+Documentação completa em [`CLAUDE.md`](CLAUDE.md).
